@@ -29,7 +29,7 @@ const MyPick = ({label, choice}) => {
     <div>
       <div className='flex justify-between items-center gap-8 flex-col'>
         <div>
-          <h2 className='text-lg font-semibold text-white mb-6 uppercase'>{label}</h2>
+          <h2 className='sm:text-lg xs:text-md font-semibold text-white sm:mb-6 uppercase'>{label}</h2>
         </div>
         <div className={`
         cursor-pointer 
@@ -38,9 +38,11 @@ const MyPick = ({label, choice}) => {
         transition 
         bg-white 
         border-[15px] 
-        rounded-full 
-        p-8 md:w-[200px] 
-        md:h-[200px] 
+        rounded-full
+        xs:w-[150px]
+        xs:h-[150px] 
+        sm:p-8 p-4 sm:w-[200px] 
+        sm:h-[200px] 
         lg:w-[250px] 
         lg:h-[250px]
         ${backClr[choice]}`}>
